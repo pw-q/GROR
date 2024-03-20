@@ -1,0 +1,963 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "GrorReg"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"link_directories",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories",
+			"include",
+			"find_external_library",
+			"find_package"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/usr/lib/cmake/eigen3/UseEigen3.cmake",
+			"/usr/local/share/pcl-1.14/PCLConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 564,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 354,
+				"parent" : 8
+			},
+			{
+				"file" : 1,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 10
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fopenmp -O3 -DNDEBUG  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-msse4.2"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mfpmath=sse"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-march=native"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mavx2"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fopenmp"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_ALL_NO_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_FILESYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_IOSTREAMS_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_SERIALIZATION_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_SYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "EIGEN_HAS_CXX17_OVERALIGN=0"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PCL_NO_PRECOMPILE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_EXPORTING"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "kiss_fft_scalar=double"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/pw/project/Registration/GROR/include"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/usr/include/eigen3"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/usr/local/include/pcl-1.14"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/local/include/vtk-9.3"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/local/include/vtk-9.3/vtknlohmannjson/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/local/include/vtk-9.3/vtkfreetype/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				2,
+				3
+			]
+		}
+	],
+	"id" : "GrorReg::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fopenmp -O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_common",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_kdtree",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_octree",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_search",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_sample_consensus",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_filters",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_io",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_features",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_ml",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_segmentation",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_visualization",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_surface",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_registration",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_keypoints",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_tracking",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_recognition",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_stereo",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_outofcore",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/pcl_people",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/Boost::system",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/Boost::filesystem",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/Boost::iostreams",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/Boost::serialization",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::ChartsCore",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::CommonColor",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::CommonComputationalGeometry",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::CommonCore",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::CommonDataModel",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::CommonExecutionModel",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::CommonMath",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::CommonMisc",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::CommonTransforms",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::FiltersCore",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::FiltersExtraction",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::FiltersGeneral",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::FiltersGeometry",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::FiltersModeling",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::FiltersSources",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::ImagingCore",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::ImagingSources",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::InteractionImage",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::InteractionStyle",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::InteractionWidgets",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::IOCore",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::IOGeometry",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::IOImage",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::IOLegacy",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::IOPLY",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::RenderingAnnotation",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::RenderingCore",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::RenderingContext2D",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::RenderingLOD",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::RenderingFreeType",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::ViewsCore",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::ViewsContext2D",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::RenderingOpenGL2",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/VTK::RenderingContextOpenGL2",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/pw/project/Registration/GROR/FLANN::FLANN",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/pw/project/Registration/GROR/pcl_common:/home/pw/project/Registration/GROR/pcl_kdtree:/home/pw/project/Registration/GROR/pcl_octree:/home/pw/project/Registration/GROR/pcl_search:/home/pw/project/Registration/GROR/pcl_sample_consensus:/home/pw/project/Registration/GROR/pcl_filters:/home/pw/project/Registration/GROR/pcl_io:/home/pw/project/Registration/GROR/pcl_features:/home/pw/project/Registration/GROR/pcl_ml:/home/pw/project/Registration/GROR/pcl_segmentation:/home/pw/project/Registration/GROR/pcl_visualization:/home/pw/project/Registration/GROR/pcl_surface:/home/pw/project/Registration/GROR/pcl_registration:/home/pw/project/Registration/GROR/pcl_keypoints:/home/pw/project/Registration/GROR/pcl_tracking:/home/pw/project/Registration/GROR/pcl_recognition:/home/pw/project/Registration/GROR/pcl_stereo:/home/pw/project/Registration/GROR/pcl_outofcore:/home/pw/project/Registration/GROR/pcl_people:/home/pw/project/Registration/GROR/Boost::system:/home/pw/project/Registration/GROR/Boost::filesystem:/home/pw/project/Registration/GROR/Boost::iostreams:/home/pw/project/Registration/GROR/Boost::serialization:/home/pw/project/Registration/GROR/VTK::ChartsCore:/home/pw/project/Registration/GROR/VTK::CommonColor:/home/pw/project/Registration/GROR/VTK::CommonComputationalGeometry:/home/pw/project/Registration/GROR/VTK::CommonCore:/home/pw/project/Registration/GROR/VTK::CommonDataModel:/home/pw/project/Registration/GROR/VTK::CommonExecutionModel:/home/pw/project/Registration/GROR/VTK::CommonMath:/home/pw/project/Registration/GROR/VTK::CommonMisc:/home/pw/project/Registration/GROR/VTK::CommonTransforms:/home/pw/project/Registration/GROR/VTK::FiltersCore:/home/pw/project/Registration/GROR/VTK::FiltersExtraction:/home/pw/project/Registration/GROR/VTK::FiltersGeneral:/home/pw/project/Registration/GROR/VTK::FiltersGeometry:/home/pw/project/Registration/GROR/VTK::FiltersModeling:/home/pw/project/Registration/GROR/VTK::FiltersSources:/home/pw/project/Registration/GROR/VTK::ImagingCore:/home/pw/project/Registration/GROR/VTK::ImagingSources:/home/pw/project/Registration/GROR/VTK::InteractionImage:/home/pw/project/Registration/GROR/VTK::InteractionStyle:/home/pw/project/Registration/GROR/VTK::InteractionWidgets:/home/pw/project/Registration/GROR/VTK::IOCore:/home/pw/project/Registration/GROR/VTK::IOGeometry:/home/pw/project/Registration/GROR/VTK::IOImage:/home/pw/project/Registration/GROR/VTK::IOLegacy:/home/pw/project/Registration/GROR/VTK::IOPLY:/home/pw/project/Registration/GROR/VTK::RenderingAnnotation:/home/pw/project/Registration/GROR/VTK::RenderingCore:/home/pw/project/Registration/GROR/VTK::RenderingContext2D:/home/pw/project/Registration/GROR/VTK::RenderingLOD:/home/pw/project/Registration/GROR/VTK::RenderingFreeType:/home/pw/project/Registration/GROR/VTK::ViewsCore:/home/pw/project/Registration/GROR/VTK::ViewsContext2D:/home/pw/project/Registration/GROR/VTK::RenderingOpenGL2:/home/pw/project/Registration/GROR/VTK::RenderingContextOpenGL2:/home/pw/project/Registration/GROR/FLANN::FLANN:/usr/local/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_surface.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_keypoints.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_tracking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_recognition.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_stereo.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_outofcore.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_people.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libflann_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_registration.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_segmentation.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_features.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_filters.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_sample_consensus.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_ml.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_visualization.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_search.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_kdtree.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_io.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_octree.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpthread.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpng.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libz.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkChartsCore-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkInteractionImage-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkIOGeometry-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkIOPLY-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkRenderingLOD-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkViewsContext2D-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkViewsCore-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkInteractionWidgets-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkFiltersModeling-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkInteractionStyle-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkFiltersExtraction-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkIOLegacy-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkIOCore-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkRenderingAnnotation-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkRenderingContextOpenGL2-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkRenderingContext2D-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkRenderingFreeType-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libvtkfreetype-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkRenderingOpenGL2-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkIOImage-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libvtkzlib-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libvtkRenderingHyperTreeGrid-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkImagingSources-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkImagingCore-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libvtkRenderingUI-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkRenderingCore-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkCommonColor-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkFiltersSources-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkFiltersGeneral-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkCommonComputationalGeometry-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkFiltersGeometry-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkFiltersCore-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkCommonExecutionModel-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkCommonDataModel-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkCommonMisc-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkCommonTransforms-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkCommonMath-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libvtkkissfft-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libX11.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libvtkCommonCore-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libvtktoken-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libvtksys-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libvtkglew-9.3.so.9.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libGLX.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_common.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-llz4",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-rpath-link,/usr/local/lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "GrorReg",
+	"nameOnDisk" : "GrorReg",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "include/gror_pre.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/ia_gror.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gror_pre.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

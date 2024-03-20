@@ -1,0 +1,3 @@
+/home/pw/project/Registration/GROR/build/CMakeFiles/rebuild_cache.dir
+/home/pw/project/Registration/GROR/build/CMakeFiles/edit_cache.dir
+/home/pw/project/Registration/GROR/build/CMakeFiles/GrorReg.dir
